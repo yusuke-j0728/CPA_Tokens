@@ -1,0 +1,19 @@
+geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "~/Library/Ethereum/geth.ipc" --syncmode=fast
+
+geth --rinkeby account new
+pass // password
+address // 0x81f72eb7dc8d85d05c5e684daad0986e3d764ed6
+
+geth attach
+> eth.syncing // when return get false, it measn syncing was done.
+
+// go to https://faucet.rinkeby.io
+
+geth attach
+> eth.accounts
+> eth.accounts[0]
+> eth.getBalance(eth.accounts[0])
+
+> personal.unlockAccount(eth.accounts[0], null, 1200)
+
+> 

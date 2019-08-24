@@ -16,8 +16,11 @@
         "lite-server": "^2.5.4"
     },
     "dependencies": {
+        "ethereumjs-tx": "^2.1.0",
+        "fs": "0.0.1-security",
         "jquery": "^3.3.1",
         "truffle-contract": "^4.0.29",
+        "truffle-hdwallet-provider": "^1.0.17",
         "uniq": "^1.0.1",
         "web3": "^1.2.1"
     }
