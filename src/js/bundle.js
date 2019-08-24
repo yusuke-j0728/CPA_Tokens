@@ -59498,8 +59498,8 @@ App = {
         }).then((receipt) => {
                 console.log("receipt: ", receipt)
                 console.log("Tokens bought...")
+                $('form').trigger('reset') // reset number of tokens in form
                 App.listenForEvents();
-                // $('form').trigger('reset') // reset number of tokens in form
                 // // Wait for Sell event
                 // $('#loader').hide();
                 // $('#content').show();
